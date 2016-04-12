@@ -18,10 +18,10 @@ example:
             permission: nickname.unnick.name
 permissions:
 nickname.unnick.name:
-  description: "Allows the user to unnick his Name"
-  default: true
+  description: "Allows the to unnick his Name"
+  default: op
             permission: nickname.nick.name
 permissions:
 nickname.nick.name:
-  description: "Allows the user to nick his Name"
-  default: true
+  description: "Allows the to nick his Name"
+  default: op
