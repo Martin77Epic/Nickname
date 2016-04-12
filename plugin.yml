@@ -1,1 +1,27 @@
 
+name: NickName
+main: NickName\NickName
+version: 1.0.0
+api: [1.0.0]
+
+load: POSTWORLD
+author: Martin77Epic
+description: Nick your Name Easy
+website: https://github.com/Martin77Epic/NickName
+commands:
+example:
+  description: Nick your Name
+    usage: "Usage: /nick"
+            permission: nickname.nick.name
+  description: Unnick your Name
+          usage: "Usage: /unnick your name"
+            permission: nickname.unnick.name
+permissions:
+nickname.unnick.name:
+  description: "Allows the user to unnick his Name"
+  default: true
+            permission: nickname.nick.name
+permissions:
+nickname.nick.name:
+  description: "Allows the user to nick his Name"
+  default: true
