@@ -1,5 +1,7 @@
 <?php
+
 namespace Nickname;
+
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\command\CommandExecutor;
