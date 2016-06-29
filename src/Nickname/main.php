@@ -31,9 +31,11 @@ case "nick":
                 $sender->sendMessage(TextFormat::GREEN . "This command is only avaible In-Game!");
                     return true;
                 }
-                $sender->sendMessage(TextFormat::GREEN . "Nick set sucessfully.");
+                if($sender->hasPermisson(nick.nick)){
+                	$sender->sendMessage(TextFormat::GREEN . "Nick set sucessfully.");
                 $sender->setDisplayName(implode(" ", $args));
                           return true;
+                }
 case "unnick":           
     $name = \strtolower(\array_shift($args));
 
